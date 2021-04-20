@@ -1,0 +1,48 @@
+*{
+			margin:0;
+			padding:0;
+			background-color: skyblue;
+		}
+		datalist {
+  display:visible;
+}
+		h1{
+			font-family: 'Zen Dots', cursive;
+		}
+		label{ 
+			font-family: 'Zen Dots', cursive;
+		}
+		form{
+			width: 50%;
+			padding: 20px;
+  			margin: auto; 
+  			margin-top: 50px; 
+		}
+		label{
+			padding: 10px;
+		}
+		input{
+			width: 100%;
+		}
+		input:hover{
+			border: 2px solid red;
+		}
+		input:focus{
+			background-color: yellow;
+		}
+		.btn{
+			width:100px;
+		}
+		.user-table{
+			width:100vw;
+			padding:0 100px;
+			text-align: center;
+		}
+		.user-table th{
+			padding-top:40px;
+
+		}
+		.user-table{
+			font-size: 20px;
+			color: white;
+		}

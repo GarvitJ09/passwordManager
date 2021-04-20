@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Manager</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Smokum&family=Zen+Dots&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<h1 class="text-center">Password Manager</h1>
+	<form id="form" action="#" method="post" class="form">
+		<div>
+			<label>Social site:</label>
+			<input list="site" name="site" id="site">
+		</div>
+		<div>
+			<label>User Id:</label>
+			<input type="text" name="userid" id="userid" required>
+		</div>
+		<div>
+			<label>Password:</label>
+			<input type="password" name="password" id="password" required>
+		</div>
+		<button class="btn btn-success mt-3" type="submit">Save</button>
+		<button class="btn btn-success mt-3" type="Reset" >Reset</button>
+	</form>
+	<table  class="user-table">
+		<th>
+			<td class="text-secondary h3">Site</td>
+			<td class="text-secondary h3">User Id</td>
+			<td class="text-secondary h3">Password</td>
+		</th>
+	</table> 
+<script src="main.js"></script>
+</body>
+</html>
