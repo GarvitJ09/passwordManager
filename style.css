@@ -1,18 +1,18 @@
 *{
 			margin:0;
-			padding:0;
+			padding:0; 
 			background-color: skyblue;
 		}
-		datalist {
-  display:visible;
-}
-		h1{
+		body{
+			/*background-color: skyblue;*/
+		}
+		h1,h4{
 			font-family: 'Zen Dots', cursive;
 		}
 		label{ 
 			font-family: 'Zen Dots', cursive;
 		}
-		form{
+		form{ 
 			width: 50%;
 			padding: 20px;
   			margin: auto; 
@@ -22,13 +22,19 @@
 			padding: 10px;
 		}
 		input{
+			padding-left: 10px;
 			width: 100%;
 		}
 		input:hover{
-			border: 2px solid red;
+			border: 2px solid yellow;
 		}
 		input:focus{
-			background-color: yellow;
+			background-color: white;
+		}
+		input[type="checkbox"]{
+			width:auto;
+			zoom: 1.2;
+			margin: 10px;
 		}
 		.btn{
 			width:100px;
@@ -45,4 +51,26 @@
 		.user-table{
 			font-size: 20px;
 			color: white;
+		}
+		.superPasswordPage{ 
+			background-color: rgba(0,0,0,0.8);
+			position: fixed;
+			width:100%;
+			height: 100vh;
+			top:0;
+		}
+		.superPasswordFill{
+			background-color: rgba(0,0,0,0.8);
+			position: fixed;
+			width:100%;
+			height: 100vh;
+			top:0;
+		}
+		#superPasswordForm{ 
+			width:70vw;
+			height: 50vh;
+		} 
+		#superPasswordFillForm{
+			width:60vw;
+			height: 50vh;
 		}

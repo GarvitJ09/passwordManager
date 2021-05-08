@@ -8,30 +8,85 @@
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-	<h1 class="text-center">Password Manager</h1>
+
+	<!-- Super Password Page -->
+
+	<div class="superPasswordPage" id="superPasswordPage">
+		<form id="superPasswordForm" method="post" >
+			<h4>Create a super password to secure saved passwords</h4>
+			Create A Superpassword:
+			<input type="password" name="superPassword" id="superPassword" required><br><br>
+			Secret Question:
+			<select id="secretQuesSelected">
+				<option>What is your Pet's name</option>
+				<option>What is your name of first school</option>
+				<option>What is your favourite pass time</option>
+				<option>what is your date of birth</option>
+				<option>Who was your childhood hero</option>
+			</select> 
+			<input type="text"  id="secretQuestion" required>
+			<button class="btn btn-primary float-right mt-5" type="submit" id="superPasswordSubmit">Done</button> 
+		</form>
+	</div>
+
+
+
+
+	<div class="superPasswordFill" id="superPasswordFill">
+		<form id="superPasswordFillForm" method="post">
+			Enter Super Password:
+			<input type="password" required id="superPasswordFillInput" >
+			<input type="checkbox" onclick="showSuperPassword();">Show Password</br>
+			<button type="submit" class="btn btn-primary float-right">Submit</button><br><br>
+			<p>Forgot Password?&nbsp;&nbsp;<a href="#" id="forgotPassword" >Secret Question</a></p>
+			<p id="secretQuestionInForget"></p>
+			<input type="password" name="forgotPasswordInput" style="display: none;" id="forgotPasswordInput"><br>
+			<button class="btn btn-primary float-right" style="display: none;" id="forgotPasswordInputButton" type="submit">Submit</button>
+		</form>
+	</div>
+
+
+
+
+
+	<!-- Entry Page -->
+
+
+	<h1 class="text-center">Password Manager</h1> 
 	<form id="form" action="#" method="post" class="form">
 		<div>
 			<label>Social site:</label>
-			<input list="site" name="site" id="site">
+			<input list="website" name="site" id="site">
+			<datalist id="website">
+				<option value="Facebook">Facebook</option>
+				<option value="Instagram">Instagram</option>
+				<option value="Twitter">Twitter</option>
+				<option value="LinkedIn">LinkedIn</option>
+				<option value="CodeChef">CodeChef</option>
+				<option value="CodeForces">CodeForces</option>
+			</datalist>
 		</div>
 		<div>
 			<label>User Id:</label>
-			<input type="text" name="userid" id="userid" required>
+			<input type="text" name="userid" id="userid" required> 
 		</div>
 		<div>
 			<label>Password:</label>
-			<input type="password" name="password" id="password" required>
+			<input type="password" name="userpassword" id="userpassword" required>
+			<pre><input type="checkbox" onclick="fnShowPassword()">Show Password</pre>
 		</div>
-		<button class="btn btn-success mt-3" type="submit">Save</button>
-		<button class="btn btn-success mt-3" type="Reset" >Reset</button>
-	</form>
-	<table  class="user-table">
+		<button class="btn btn-primary" type="submit">Save</button>
+		<button class="btn btn-primary" type="Reset" >Reset</button>
+	</form>  
+	<table  class="user-table" id="user-table">
 		<th>
 			<td class="text-secondary h3">Site</td>
 			<td class="text-secondary h3">User Id</td>
-			<td class="text-secondary h3">Password</td>
+			<td class="text-secondary h3">Password</td> 
+			<td></td>
+			<td></td>
 		</th>
-	</table> 
+	</table>
 <script src="main.js"></script>
 </body>
 </html>
